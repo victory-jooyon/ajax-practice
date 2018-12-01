@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./main.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="contents-wrapper">
+        <div class="navbar">
+            Todo List에 오신 걸 환영합니다
+        </div>
+        <div class="form-wrapper">
+            <form method="POST" action="/api/v1/add">
+                <div>이름 : <input type="text" name="name"/></div>
+                <div>해야할 일 : <input type="text" name="todo"/></div>
+                <div>날짜 입력 : <input type="date" name="date"/></div>
+                <button id="btn_submit" type="submit">등록</button>
+            </form>
+        </div>
+        <div class="list-wrapper">
+            <div class="main">
+                <button id="btn_load">불러오기</button>
+                <div id="todolist" class="todolist">
+                    <div class="todo">OO님이 OOOO-OO-OO일에 ~~라는 일정이 있습니다.</div>
+                    <div class="todo">OO님이 OOOO-OO-OO일에 ~~라는 일정이 있습니다.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script type="text/javascript" src="./control.js"></script>
+</body>
+</html>

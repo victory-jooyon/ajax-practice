@@ -1,0 +1,27 @@
+{
+  "name": "sparcs-ajax-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lannstark/sparcs-ajax-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lannstark/sparcs-ajax-example/issues"
+  },
+  "homepage": "https://github.com/lannstark/sparcs-ajax-example#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.6",
+    "nodemon": "^1.18.4"
+  }
+}
